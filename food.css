@@ -1,0 +1,348 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo {
+    margin-left: 5px;
+}
+
+#logo img {
+    height: 100px;
+    width: 100px;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: auto;
+    padding: 10px 19px;
+    font-weight: 500;
+    font-size: 25px;
+    text-shadow: 2px 1px black;
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: rgb(214, 46, 46);
+}
+
+#home {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    flex-direction: column;
+    height: 600px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('images-food/home.avif') no-repeat center center/cover;
+    height: 642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.login {
+    background-color: rgb(7, 177, 245);
+    color: white;
+    margin: 5px 5px;
+    padding: 11px 20px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: none;
+    justify-content: center;
+    cursor: pointer;
+    text-shadow: 2px 1px black;
+    font-weight: 700;
+}
+
+#login-button {
+    position: absolute;
+    right: 20px;
+}
+
+.login:hover {
+    color: white;
+    background-color: black;
+}
+
+.login:visited {
+    color: blue;
+    background-color: white;
+}
+
+h1 {
+    color: rgb(245, 243, 240);
+    font-size: 60px;
+    position: relative;
+}
+
+#deliver {
+    font-size: 25px;
+    text-shadow: 2px 1px black;
+}
+
+.order {
+    position: relative;
+    margin: 20px 5px;
+    padding: 5px 15px;
+    font-size: 20px;
+    border: 0;
+    border-radius: 15px;
+    background: transparent;
+}
+
+#search {
+    margin: 5px 5px;
+    padding: 8px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+}
+
+#search:hover {
+    background-color: rgb(47, 46, 46);
+    color: white;
+}
+
+search:visited {
+    color: blue;
+}
+
+.order input[type="text"] {
+    font-size: 18px;
+    margin: 5px 5px;
+    padding: 8px 35px;
+    border-radius: 25px;
+    border: none;
+}
+
+.order input[type="text"]:hover {
+    background-color: rgb(21, 21, 21);
+    color: white;
+}
+
+::placeholder {
+    color: rgb(68, 72, 74);
+}
+
+.order span {
+    font-size: 30px;
+}
+
+.h-primary {
+    font-size: 3.5rem;
+    padding: 10px;
+    color: black;
+}
+
+.h-secondary {
+    font-size: 1.9rem;
+    padding: 10px;
+    margin: 0px;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* services section */
+
+
+/* .services-container {
+    background-color: rgb(212, 236, 245);
+} */
+
+#services {
+    display: flex;
+    margin: 5px 50px 5px 50px;
+}
+
+#services .box {
+    border: 1px solid red;
+    padding: 30px 50px;
+    margin: 5px 35px 5px 35px;
+    border-radius: 20px;
+    background-color: rgb(241, 233, 233);
+    width: 33%;
+}
+
+#services .box img {
+    height: 180px;
+    display: block;
+    margin: auto;
+}
+
+
+/* clients section */
+
+#clients img {
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+}
+
+#clients {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-container2 {
+    position: relative;
+    height: 500px;
+}
+
+.services-container2::before {
+    content: "";
+    background: url('images-food/katherine-chase-4MMK78S7eyk-unsplash.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -1;
+}
+
+
+/* form styling */
+
+.contact {
+    background-image: url('images-food/contact-form.jpg');
+    background-repeat: no-repeat;
+    background-size: 1490px 630px;
+}
+
+.contact .h-primary {
+    color: white;
+}
+
+#contact-box {
+    color: white;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    font-size: 18px;
+    margin: 5px 5px;
+    padding: 8px 35px;
+    border-radius: 25px;
+    border: none;
+}
+
+.form-group input[type="text"],
+textarea {
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    padding: 7px 7px;
+}
+
+#button {
+    font-weight: bolder;
+    background-color: aqua;
+    font-size: 18px;
+    width: 70%;
+    display: block;
+    margin: auto;
+    border: none;
+    border-radius: 25px;
+    padding: 7px 7px;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: rgb(3, 108, 149);
+    color: white;
+}
+
+.form-group input[type="text"]:hover {
+    background-color: black;
+    color: white;
+}
+
+#navbar-2 {
+    background-color: grey;
+    display: flex;
+    position: relative;
+}
+
+#navbar-2 ul {
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding: 10px;
+}
+
+#navbar-2 ul li a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+#navbar-2 ul li a:hover {
+    color: black;
+}
